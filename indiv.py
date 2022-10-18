@@ -81,6 +81,9 @@ def main():
 
         elif command == 'add':
             route = get_route()
+            """
+            Отсортировать список в случае необходимости
+           """
             routes.append(route)
             if len(routes) > 1:
                 routes.sort(key=lambda item: item.get('number', ''))
